@@ -8,7 +8,9 @@ function loadrepo(){
      // var jobj=eval("("+xhr.responseText+")");
      // var item=jobj.items[0].id;
       var item=JSON.parse(xhr.responseText).items[0].owner.avatar_url;
-      document.querySelector(".div1").innerHTML="<a href='"+item+"'>Hello</a>";
+      var pic="<a href='"+item+"'>Hello</a>";
+      console.log(item);
+      document.querySelector(".div1").innerHTML=pic;
 
     }
   }
