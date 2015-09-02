@@ -22,6 +22,6 @@ function loadrepo(url){
 }
 
 
-var val = $("#repo_name").val();
+var val = document.querySelector("#repo_name").value;
 loadrepo("https://api.github.com/search/repositories?q="+val)
   .then(function(res){console.log("23")}, function(res){console.log(res)});
